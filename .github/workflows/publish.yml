@@ -15,5 +15,5 @@ jobs:
           username: sebbe743
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: sebbe743/publish-packages/game
+          repository: sebbe743/labo2/packet
           tag_with_sha: true
