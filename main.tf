@@ -11,13 +11,13 @@ provider "docker" {
   host    = "npipe:////.//pipe//docker_engine"
 }
 
-resource "docker_image" "packet" {
-  name         = "nginx:latest"
-  keep_locally = true
+resource "docker_image" "nginx" {
+  name         = "ghcr.io/sebbe743/labo2/packet:latest"
+  keep_locally = false
 }
 
-resource "docker_container" "packet" {
-  image = docker_image.packet.latest
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.latest
   name  = "tutorial"
   ports {
     internal = 80
