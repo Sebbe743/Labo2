@@ -5,4 +5,4 @@ RUN apt-get install unzip \
   unzip terraform_1.0.7_linux_amd64.zip \
   sudo mv terraform /usr/local/bin/ \
   terraform --version 
-ENTRYPOINT["terraform deploy"]
+ENTRYPOINT ["terraform deploy"]
