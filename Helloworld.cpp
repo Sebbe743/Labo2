@@ -4,7 +4,6 @@
 int main(int argc, char *argv[])
 {
     std::cout<<"hello world"<< std::endl;
-    system("pause");
-
+    int c = getchar();
     return 0;
 }
