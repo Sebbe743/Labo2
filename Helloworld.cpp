@@ -1,6 +1,13 @@
 #include <iostream>
+#include <cstdlib>
 
-int main()
+
+int main(int argc, char *argv[])
 {
-    std::cout << "Hello, World!" << std::endl;
+    QCoreApplication a(argc, argv);
+
+    std::cout<<"hello world"<< std::endl;
+    system("pause");
+
+    return 0;
 }
