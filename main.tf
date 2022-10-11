@@ -12,13 +12,14 @@ provider "docker" {
 }
 
 resource "docker_image" "nginx" {
-  name         = "ghcr.io/sebbe743/labo2/packet:latest"
+  name         = "ghcr.io/sebbe743/labo2/packet:sha-68899f3"
   keep_locally = false
 }
 
 resource "docker_container" "nginx" {
   image = docker_image.nginx.latest
-  name  = "tutorial"
+  name  = "Sebbe"
+  must_run = false
   ports {
     internal = 80
     external = 8000
